@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabla de Recomendaciones</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #eef2ff, #f8fafc);
+      padding: 40px;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: auto;
+      background: #fff;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+    }
+
+    h1 {
+      text-align: center;
+      color: #111827;
+      margin-bottom: 25px;
+      font-size: 32px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      overflow: hidden;
+      border-radius: 15px;
+    }
+
+    thead {
+      background: #1e293b;
+      color: white;
+    }
+
+    th, td {
+      padding: 14px;
+      text-align: left;
+      border-bottom: 1px solid #e5e7eb;
+      font-size: 14px;
+      vertical-align: top;
+    }
+
+    tbody tr:nth-child(even) {
+      background: #f8fafc;
+    }
+
+    tbody tr:hover {
+      background: #e0f2fe;
+      transition: 0.3s ease;
+    }
+
+    .cumplida {
+      color: #16a34a;
+      font-weight: bold;
+    }
+
+    .nocumplida {
+      color: #dc2626;
+      font-weight: bold;
+    }
+
+    .parcial {
+      color: #d97706;
+      font-weight: bold;
+    }
+
+    .valor {
+      font-weight: bold;
+      color: #2563eb;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Seguimiento de Recomendaciones</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Código</th>
+        <th>Descripción Resumida</th>
+        <th>Valor</th>
+        <th>Área Responsable</th>
+        <th>Estado</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>R-01</td>
+        <td>Saneamiento de las cuentas contables</td>
+        <td class="valor">542.837,25</td>
+        <td>Tesorería / Contabilidad</td>
+        <td class="nocumplida">NO CUMPLIDA</td>
+      </tr>
+
+      <tr>
+        <td>R-01</td>
+        <td>Reclasificación a la cuenta de orden</td>
+        <td class="valor">760.676,75</td>
+        <td>Tesorería / Contabilidad</td>
+        <td class="nocumplida">NO CUMPLIDA</td>
+      </tr>
+
+      <tr>
+        <td>R-01</td>
+        <td>Enviar al gasto</td>
+        <td class="valor">1.875,00</td>
+        <td>Tesorería / Contabilidad / Jurídica</td>
+        <td class="cumplida">CUMPLIDA</td>
+      </tr>
+
+      <tr>
+        <td>R-02</td>
+        <td>Justificación de cuentas por cobrar - Tapia Fray Darwin José</td>
+        <td class="valor">200,00</td>
+        <td>Tesorería / Contabilidad</td>
+        <td class="cumplida">CUMPLIDA</td>
+      </tr>
+
+      <tr>
+        <td>R-02</td>
+        <td>Salazar Otavalo Marco Asdrúbal</td>
+        <td class="valor">1.078,32</td>
+        <td>Tesorería / Contabilidad</td>
+        <td class="nocumplida">NO CUMPLIDA</td>
+      </tr>
+
+      <tr>
+        <td>R-03</td>
+        <td>Cuentas por cobrar complejos - Tena</td>
+        <td class="valor">979,96</td>
+        <td>Tesorería / Contabilidad</td>
+        <td class="cumplida">CUMPLIDA</td>
+      </tr>
+
+      <tr>
+        <td>R-03</td>
+        <td>Cuentas por cobrar complejos - Guayas</td>
+        <td class="valor">4.771,89</td>
+        <td>Tesorería / Contabilidad / Jurídica</td>
+        <td class="nocumplida">NO CUMPLIDA</td>
+      </tr>
+
+      <tr>
+        <td>R-04</td>
+        <td>Trabajador con habilidades especiales</td>
+        <td class="valor">4.600,00</td>
+        <td>CRRHH</td>
+        <td class="cumplida">CUMPLIDA</td>
+      </tr>
+
+      <tr>
+        <td>R-09</td>
+        <td>Informe de posibilidad de saneamiento de cuentas contables</td>
+        <td>-</td>
+        <td>Contabilidad</td>
+        <td class="nocumplida">NO CUMPLIDA</td>
+      </tr>
+
+      <tr>
+        <td>R-10</td>
+        <td>Cierre del año fiscal administradores</td>
+        <td>-</td>
+        <td>Administrador Complejos / CRRHH</td>
+        <td class="parcial">PARCIALMENTE CUMPLIDA</td>
+      </tr>
+
+      <tr>
+        <td>R-11</td>
+        <td>Cuentas por cobrar de los Estados Financieros</td>
+        <td>-</td>
+        <td>Tesorería / Contabilidad</td>
+        <td class="nocumplida">NO CUMPLIDA</td>
+      </tr>
+
+      <tr>
+        <td>R-12</td>
+        <td>Levantamiento de activos fijos</td>
+        <td>-</td>
+        <td>Tesorería / Contabilidad</td>
+        <td class="nocumplida">NO CUMPLIDA</td>
+      </tr>
+
+      <tr>
+        <td>R-16</td>
+        <td>Autorización emitida por el SRI - Resolución DGERCGC24-00000015</td>
+        <td>-</td>
+        <td>Tesorería / Contabilidad</td>
+        <td class="cumplida">CUMPLIDA</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
